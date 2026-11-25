@@ -29,39 +29,13 @@ Assuming they exist and we find them, this demonstrates another mechanism which 
 
 Novelty stems from the discovery of new proteins from the existing genomes, allowing researchers to investigate more proteins, potentially uncovering key proteins in different processes.
 
- 
-# Hypothesis Validation
+# Methods
 
-The premise of the fusion-splicing alternative is based on the splicing mechanism in eukaryotes. The main source of evidence will come from RNA-seq data and the analysis of that. Supporting evidence can be made with evolutionary conservation.
-
-### Conservation in evolution
-
-A case for the existence of fusion-spliced proteins can be started to be built using evolution and conservation. If there exists an evolutionary pressure that conserves these aspects, we can start ruling out that what we observe is by chance. The null hypothesis is that we see this case by pure chance, and there is no evolutionary pressure involved that keep them together.
-
-Specifically, these need to be conserved across a wide range of species:
-- Genes are oriented the same way
-- Intergenic distance is *below* a threshold
-- Genes are in the same order (always A, then B; and not the other way around)
-
-I will refer to them as the gene topology to keep it short. In short, it means the three properties above.
-Conserved gene topology for both genes would signify evolutionary pressure to keep these genes not only close together, but in a way that guarantees that the transcription machinery can produce a single strand of mRNA. Without these, we reject our hypothesis.
-
-###### Hypothesis: CCR2 and CCR5 have a splicing variant that splices both of these proteins into a single protein that is functionally relevant to the species.
-
-### Fusion-spliced proteins from RNA-seq data
-
-The golden standard in proving a protein exists, is multi-layered. The closer to the source (i.e. the protein itself, from a cell) the better the evidence. The case weakens when we move further away from the actual protein. Evidence at the DNA level is weaker than RNA, and that is weaker than protein.
-
-One might rightfully ask if that's a pseudogene if found at the DNA level, or ask if the mRNA is even translated at all if found at the RNA level. Since we have no direct means of measuring at the protein level, we will try to find evidence for fusion-spliced proteins at the RNA level. 
-
-The goal is to look at raw RNA-seq data, and try to align them to genomic regions where two genes are topologically fusion-ready (intergenic distance and orientation, order doesn't matter here since we're not looking at conservation). From there, we will do further analyses to build more support.
-
-
-# Finding fusion-splicing cases
-
-Although the search started with two GPCR proteins, the search pipeline aims to cast a wide net to catch all potential cases. The project will analyze RNA-seq data and will try to find fitting candidates. Then, for these cases, we plan to gather more supporting evidence from evolutionary conservation and maybe other aspects.
+The premise of the fusion-splicing alternative is based on the splicing mechanism in eukaryotes. The main source of evidence will come from RNA-seq data and the analysis of that. Supporting evidence can be made with evolutionary conservation and protein structure analysis after predictions.
 
 ## Finding candidates
+
+Although the search started with two GPCR proteins, the search pipeline aims to cast a wide net to catch all potential cases. The project will analyze RNA-seq data and will try to find fitting candidates. Then, for these cases, we plan to gather more supporting evidence from evolutionary conservation and maybe other aspects.
 
 ### Creating the list of candidates
 
