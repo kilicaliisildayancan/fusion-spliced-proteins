@@ -42,7 +42,11 @@ Although the search started with two GPCR proteins, the search pipeline aims to 
 To start looking at the genomes of species and filtering out the gene pairs that could fit our criterias, we need a threshold distance that the transcription mechanism is noted to tolerate. If two genes are spliced together, the intermediate section will be an intron. 
 If we know the distribution of intron lengths, we can start finding gene pairs that are close enough to be linked together by an intron.
 
-We take the species' genes that are alternatively spliced, and get the intron positions of each gene. From this, we will get the basepair difference between exons, to have a rough measure of how long an intron can be.
+The distribution of the introns of protein coding human genes is left skewed, with the 95th percentile being around 24kbp.
+
+![The distribution of human intron lengths from GENCODE](./results/intron/intron_distribution/figures/intron_length_distribution.png)
+
+This is the starting point to generate the list of candidates. From the GENCODE data, we look at each gene and its downstream neighbours within the threshold and list them as a pair. Since one of our constraints is that the CDS of the first gene is spliced together with the CDS of the second gene, this distance needs to be below a threshold. Any DNA fragments between this is acceptable, since they will be spliced out anyways. This is the exhaustive list of candidates given that the threshold is at the 95th percentile.
 
 ### Looking at expression profiles
 
