@@ -1,0 +1,8 @@
+{
+  "gtf_path": "/mnt/bio/fusion-spliced-proteins/raw/gencode/gencode.v50.basic.annotation.gtf.gz",
+  "gtf_url": "http://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_50/gencode.v50.basic.annotation.gtf.gz",
+  "transcript_type": "protein_coding",
+  "output_dir": "results/intron/intron_distribution",
+  "source": "GENCODE v50 basic",
+  "genome_build": "GRCh38"
+}
