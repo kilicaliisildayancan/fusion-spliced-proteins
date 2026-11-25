@@ -34,3 +34,12 @@ Outputs go to `results/intron/intron_distribution/` (relative to the repo root).
 - `distribution.tsv` — intron-length histogram, log2 bins (bin_start, bin_end,
   bin_label, count, fraction, cumulative_fraction).
 - `provenance.json` — source, version, params, GTF path/url/hash/size.
+
+## Plot
+
+    python src/intron/plot_intron_distribution.py --config src/intron/plot_config.json
+
+Reads `distribution.tsv` + `summary.tsv` and writes a histogram of intron
+lengths (log-log, annotated with median / mean / P95) to
+`results/intron/intron_distribution/figures/`. Requires matplotlib (conda env
+`bio`). Output formats set via `formats` in `plot_config.json`.

@@ -1,0 +1,6 @@
+{
+  "input_dir": "results/intron/intron_distribution",
+  "output_dir": "results/intron/intron_distribution/figures",
+  "formats": ["png", "svg"],
+  "figure": {"width": 7.0, "height": 5.0, "dpi": 150}
+}
