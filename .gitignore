@@ -1,0 +1,10 @@
+# Results (large, regenerable)
+results/
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+
+# OS / editor
+.DS_Store
