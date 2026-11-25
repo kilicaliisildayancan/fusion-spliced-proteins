@@ -1,6 +1,9 @@
 # Results (large, regenerable)
 results/
 
+# Downloaded data (akkad-only, regenerable)
+data/
+
 # Python
 __pycache__/
 *.py[cod]

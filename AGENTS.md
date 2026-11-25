@@ -10,8 +10,8 @@ How to work on this repository.
    next piece. Never build ahead of a review.
 
 2. Keep everything in its folder.
-   Scripts and results each have a home (see Directory map). Nothing lives
-   outside its designated folder.
+   Scripts, data, and results each have a home (see Directory map). Nothing
+   lives outside its designated folder.
 
 3. The owner maintains README.md and HISTORY.md. Do not edit them.
 
@@ -29,6 +29,8 @@ How to work on this repository.
                                           lives next to its script
     results/<workstream>/<script-name>/   each script's outputs, in a subfolder
                                           named after the script
+    data/                                 downloaded source data, akkad-only
+                                          (gitignored)
     figures/                              repository figures (owner-maintained)
 
 ## Notes
