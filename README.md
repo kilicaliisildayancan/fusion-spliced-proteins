@@ -44,7 +44,7 @@ If we know the distribution of intron lengths, we can start finding gene pairs t
 
 The distribution of the introns of protein coding human genes is left skewed, with the 95th percentile being around 24kbp.
 
-![The distribution of human intron lengths from GENCODE](./results/intron/intron_distribution/figures/intron_length_distribution.png)
+![The distribution of human intron lengths from GENCODE](./figures/experimental/intron_length_distribution.png)
 
 This is the starting point to generate the list of candidates. From the GENCODE data, we look at each gene and its downstream neighbours within the threshold and list them as a pair. Since one of our constraints is that the CDS of the first gene is spliced together with the CDS of the second gene, this distance needs to be below a threshold. Any DNA fragments between this is acceptable, since they will be spliced out anyways. This is the exhaustive list of candidates given that the threshold is at the 95th percentile.
 
